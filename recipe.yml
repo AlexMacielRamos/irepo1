@@ -32,7 +32,7 @@ scripts:
     # Manually listed scripts.
     - pip_installs.sh
     - clone_repo.sh
-    - add_bin.sh
+    # - add_bin.sh
 # Custom RPM configuration.
 # These changes will be integrated into your custom image at the "system level".
 rpm:
