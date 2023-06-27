@@ -5,6 +5,12 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-# Your code goes here.
-echo 'This is an example shell script'
-echo 'Scripts here will run during build if specified in recipe.yml'
+cd usr/share
+
+pip config set global.target /usr/lib/python3.11/site-packages
+echo 'se cambio el directorio de pip'
+pip install pyside6
+pip install virtualenv
+mkdir myvenv
+python -m venv myvenv/venv1
+
